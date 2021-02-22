@@ -1,7 +1,7 @@
 module.exports = {
-  base: '/vuepress-demo/',
-  title: 'VuePress Blog Demo',
-  description: 'A simple blog built with VuePress - by Ehkoo',
+  base: '/',
+  title: 'NatCOOP',
+  description: '',
   dest: 'docs',
   themeConfig: {
     nav: [
