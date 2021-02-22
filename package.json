@@ -1,0 +1,17 @@
+{
+  "name": "bolg-nat",
+  "version": "1.0.0",
+  "description": "Blog for NatCOOP",
+  "main": "index.js",
+  "repository": "https://github.com/phuongnd1312/blog-nat",
+  "author": "xinatNDP",
+  "license": "MIT",
+  "private": false,
+    "scripts": {
+      "dev": "vuepress dev",
+      "build": "vuepress build"
+    },
+  "dependencies": {
+    "vuepress": "^1.8.2"
+  }
+}
