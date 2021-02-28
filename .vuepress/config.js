@@ -7,6 +7,7 @@ module.exports = {
     nav: [
       { text: 'Trang Chủ', link: '/' },
       { text: 'Giới Thiệu', link: '/about/' },
+      { text: 'Bài Viết', link: '/posts/' },
     ],
     displayAllHeaders: true,
     sidebar: 'auto'
