@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Setup Windows Subsystem for Linux | NatCOOP</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="Welcome to your Home">
+    
+    <link rel="preload" href="/assets/css/0.styles.e4d8b86b.css" as="style"><link rel="preload" href="/assets/js/app.b3709f9f.js" as="script"><link rel="preload" href="/assets/js/2.315cac69.js" as="script"><link rel="preload" href="/assets/js/11.0d2879b0.js" as="script"><link rel="prefetch" href="/assets/js/10.12937e3c.js"><link rel="prefetch" href="/assets/js/12.93848080.js"><link rel="prefetch" href="/assets/js/13.a23efa14.js"><link rel="prefetch" href="/assets/js/3.84c895e8.js"><link rel="prefetch" href="/assets/js/4.75c9048d.js"><link rel="prefetch" href="/assets/js/5.f636e753.js"><link rel="prefetch" href="/assets/js/6.50b6cc89.js"><link rel="prefetch" href="/assets/js/7.54c1e084.js"><link rel="prefetch" href="/assets/js/8.29b667d2.js"><link rel="prefetch" href="/assets/js/9.4604ed70.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e4d8b86b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">NatCOOP</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Nhà
+</a></div><div class="nav-item"><a href="/me/" class="nav-link">
+  Tôi
+</a></div><div class="nav-item"><a href="/this/" class="nav-link">
+  Ở đây
+</a></div><div class="nav-item"><a href="/that/" class="nav-link router-link-active">
+  Ngoài kia
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Nhà
+</a></div><div class="nav-item"><a href="/me/" class="nav-link">
+  Tôi
+</a></div><div class="nav-item"><a href="/this/" class="nav-link">
+  Ở đây
+</a></div><div class="nav-item"><a href="/that/" class="nav-link router-link-active">
+  Ngoài kia
+</a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="setup-windows-subsystem-for-linux"><a href="#setup-windows-subsystem-for-linux" class="header-anchor">#</a> Setup Windows Subsystem for Linux</h1> <p><img src="/img/wsl/wsl.png" alt="img"></p> <h3 id="requirements"><a href="#requirements" class="header-anchor">#</a> Requirements</h3> <ul><li>Windows 10.</li></ul> <h3 id="steps"><a href="#steps" class="header-anchor">#</a> Steps</h3> <h4 id="_1-enable-wsl2"><a href="#_1-enable-wsl2" class="header-anchor">#</a> 1. Enable WSL2</h4> <ul><li>open Microsoft Start.</li> <li>search for Turn Windows features on or off.</li></ul> <p><img src="/img/wsl/wsl-0.png" alt="img"></p> <ul><li>check Hyper-V.</li> <li>check Windows Subsystem for Linux.</li></ul> <p><img src="/img/wsl/wsl-1.png" alt="img"></p> <h4 id="_2-install-a-linux-distro-for-wsl2"><a href="#_2-install-a-linux-distro-for-wsl2" class="header-anchor">#</a> 2. Install a Linux distro for WSL2</h4> <ul><li>open Microsoft Store on Windows.</li> <li>search for Linux.</li> <li>install Ubuntu 18.04 (recommended).</li></ul> <p><img src="/img/wsl/wsl-2.png" alt="img"></p> <h4 id="_3-install-windows-terminal"><a href="#_3-install-windows-terminal" class="header-anchor">#</a> 3. Install Windows Terminal</h4> <ul><li>open Microsoft Store on Windows;</li> <li>search for Windows Terminal;</li> <li>install Windows Terminal.</li></ul> <h4 id="_4-set-windows-terminal-to-use-ubuntu"><a href="#_4-set-windows-terminal-to-use-ubuntu" class="header-anchor">#</a> 4. Set Windows Terminal to use Ubuntu</h4> <ul><li>&quot;defaultProfile&quot;: &quot;{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}&quot;</li></ul> <p><img src="/img/wsl/wsl-3.png" alt="img"></p> <h4 id="_5-install-zsh-and-oh-my-zsh"><a href="#_5-install-zsh-and-oh-my-zsh" class="header-anchor">#</a> 5. Install ZSH and Oh My Zsh</h4> <p>Run in Windows Termina:</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">sudo</span> <span class="token function">apt</span> update <span class="token operator">&amp;&amp;</span> <span class="token function">sudo</span> <span class="token function">apt</span> upgrade -y
+
+<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> <span class="token function">zsh</span> -y
+<span class="token function">sh</span> -c <span class="token string">&quot;<span class="token variable"><span class="token variable">$(</span><span class="token function">curl</span> -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh<span class="token variable">)</span></span>&quot;</span>
+</code></pre></div><h4 id="_6-install-nvm-using-zsh"><a href="#_6-install-nvm-using-zsh" class="header-anchor">#</a> 6. Install NVM using ZSH</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh <span class="token operator">|</span> <span class="token function">bash</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;export NVM_DIR=<span class="token entity" title="\&quot;">\&quot;</span><span class="token environment constant">$HOME</span>/.nvm<span class="token entity" title="\&quot;">\&quot;</span><span class="token entity" title="\n">\n</span>[ -s <span class="token entity" title="\&quot;">\&quot;</span><span class="token variable">$NVM_DIR</span>/nvm.sh<span class="token entity" title="\&quot;">\&quot;</span> ] &amp;&amp; \. <span class="token entity" title="\&quot;">\&quot;</span><span class="token variable">$NVM_DIR</span>/nvm.sh<span class="token entity" title="\&quot;">\&quot;</span><span class="token entity" title="\n">\n</span>[ -s <span class="token entity" title="\&quot;">\&quot;</span><span class="token variable">$NVM_DIR</span>/bash_completion<span class="token entity" title="\&quot;">\&quot;</span> ] &amp;&amp; \. <span class="token entity" title="\&quot;">\&quot;</span><span class="token variable">$NVM_DIR</span>/bash_completion<span class="token entity" title="\&quot;">\&quot;</span>&quot;</span> <span class="token operator">&gt;&gt;</span> ~/.zshrc
+<span class="token builtin class-name">source</span> ~/.zshrc
+</code></pre></div><h4 id="_7-install-node-latest-using-nvm"><a href="#_7-install-node-latest-using-nvm" class="header-anchor">#</a> 7. Install Node (latest) using NVM</h4> <div class="language-bash extra-class"><pre class="language-bash"><code>nvm <span class="token function">install</span> node
+nvm <span class="token builtin class-name">alias</span> default node
+</code></pre></div><h4 id="_8-install-yarn"><a href="#_8-install-yarn" class="header-anchor">#</a> 8. Install Yarn</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> -sS https://dl.yarnpkg.com/debian/pubkey.gpg <span class="token operator">|</span> <span class="token function">sudo</span> apt-key <span class="token function">add</span> -
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;deb https://dl.yarnpkg.com/debian/ stable main&quot;</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> /etc/apt/sources.list.d/yarn.list
+<span class="token function">sudo</span> <span class="token function">apt-get</span> update <span class="token operator">&amp;&amp;</span> <span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> --no-install-recommends <span class="token function">yarn</span>
+</code></pre></div><h4 id="_9-install-nodemon-eslint"><a href="#_9-install-nodemon-eslint" class="header-anchor">#</a> 9. Install Nodemon, ESLint</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> i -g nodemon eslint
+</code></pre></div><h4 id="_10-install-neofetch"><a href="#_10-install-neofetch" class="header-anchor">#</a> 10. Install neofetch</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> neofetch
+<span class="token builtin class-name">echo</span> <span class="token string">'neofetch'</span> <span class="token operator">&gt;&gt;</span> ~/.zshrc
+</code></pre></div><h4 id="_11-install-vscode-extensions"><a href="#_11-install-vscode-extensions" class="header-anchor">#</a> 11. Install VSCode extensions</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> -o- https://raw.githubusercontent.com/phuongnd1312/devops/master/vscode-extension.sh <span class="token operator">|</span> <span class="token function">bash</span>
+</code></pre></div><h4 id="_12-upgrade-ubuntu"><a href="#_12-upgrade-ubuntu" class="header-anchor">#</a> 12. Upgrade Ubuntu</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">sudo</span> <span class="token function">apt</span> upgrade -y
+</code></pre></div><h4 id="_13-install-zsh-plugins"><a href="#_13-install-zsh-plugins" class="header-anchor">#</a> 13. Install ZSH plugins</h4> <h5 id="install-plugins"><a href="#install-plugins" class="header-anchor">#</a> Install plugins</h5> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># zsh-completions</span>
+<span class="token function">git</span> clone https://github.com/zsh-users/zsh-completions <span class="token variable">${ZSH_CUSTOM<span class="token operator">:=</span>~<span class="token operator">/</span>.oh-my-zsh<span class="token operator">/</span>custom}</span>/plugins/zsh-completions
+<span class="token comment"># zsh-autosuggestions</span>
+<span class="token function">git</span> clone https://github.com/zsh-users/zsh-autosuggestions <span class="token variable">${ZSH_CUSTOM<span class="token operator">:-</span>~<span class="token operator">/</span>.oh-my-zsh<span class="token operator">/</span>custom}</span>/plugins/zsh-autosuggestions
+<span class="token comment"># fasd</span>
+<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> fasd -y
+</code></pre></div><h5 id="edit-zshrc-in-wsl"><a href="#edit-zshrc-in-wsl" class="header-anchor">#</a> Edit <code>~/.zshrc</code> in WSL</h5> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># open file</span>
+<span class="token function">nano</span> ~/.zshrc
+
+<span class="token comment"># open file</span>
+<span class="token function">nano</span> ~/.zshrc
+
+<span class="token comment"># update file</span>
+<span class="token assign-left variable">ZSH_THEME</span><span class="token operator">=</span><span class="token string">&quot;bira&quot;</span>
+
+<span class="token assign-left variable">plugins</span><span class="token operator">=</span><span class="token punctuation">(</span>   
+    <span class="token function">git</span>
+    zsh-autosuggestions
+    zsh-completions
+<span class="token punctuation">)</span>
+
+<span class="token comment"># save file</span>
+Ctrl + o Enter
+Ctrl + x
+
+<span class="token comment"># run file</span>
+<span class="token builtin class-name">source</span> ~/.zshrc
+
+</code></pre></div><h4 id="_14-set-vscode-user-setting"><a href="#_14-set-vscode-user-setting" class="header-anchor">#</a> 14. Set VSCode User Setting</h4> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;terminal.integrated.shell.windows&quot;</span><span class="token operator">:</span> <span class="token string">&quot;C:\\Program Files\\Git\\bin\\bash.exe&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;git.path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/usr/bin/git&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;workbench.iconTheme&quot;</span><span class="token operator">:</span> <span class="token string">&quot;eq-material-theme-icons-ocean&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;editor.renderWhitespace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;all&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;files.eol&quot;</span><span class="token operator">:</span> <span class="token string">&quot;\n&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;gitlens.advanced.messages&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;suppressShowKeyBindingsNotice&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;gitlens.historyExplorer.enabled&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;team.showWelcomeMessage&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;eslint.trace.server&quot;</span><span class="token operator">:</span> <span class="token string">&quot;verbose&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;emmet.includeLanguages&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;javascript&quot;</span><span class="token operator">:</span> <span class="token string">&quot;html&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;vue&quot;</span><span class="token operator">:</span> <span class="token string">&quot;html&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;vue-html&quot;</span><span class="token operator">:</span> <span class="token string">&quot;html&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;javascriptreact&quot;</span><span class="token operator">:</span> <span class="token string">&quot;html&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;typescript&quot;</span><span class="token operator">:</span> <span class="token string">&quot;html&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;vetur.format.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;html&quot;</span><span class="token operator">:</span> <span class="token string">&quot;prettier&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;css&quot;</span><span class="token operator">:</span> <span class="token string">&quot;prettier&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;postcss&quot;</span><span class="token operator">:</span> <span class="token string">&quot;prettier&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;scss&quot;</span><span class="token operator">:</span> <span class="token string">&quot;prettier&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;less&quot;</span><span class="token operator">:</span> <span class="token string">&quot;prettier&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;js&quot;</span><span class="token operator">:</span> <span class="token string">&quot;prettier&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;ts&quot;</span><span class="token operator">:</span> <span class="token string">&quot;prettier&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;vue&quot;</span><span class="token operator">:</span> <span class="token string">&quot;prettier&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;editor.multiCursorModifier&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ctrlCmd&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;window.zoomLevel&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;javascript.updateImportsOnFileMove.enabled&quot;</span><span class="token operator">:</span> <span class="token string">&quot;always&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;terminal.integrated.rendererType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;dom&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;git.ignoreMissingGitWarning&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;jsDocCompletion.enabled&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;javascript.referencesCodeLens.enabled&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;diffEditor.ignoreTrimWhitespace&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;typescript.updateImportsOnFileMove.enabled&quot;</span><span class="token operator">:</span> <span class="token string">&quot;always&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;gitlens.views.fileHistory.enabled&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;gitlens.views.lineHistory.enabled&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;workbench.colorCustomizations&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;activityBarBadge.background&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#2979FF&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;list.activeSelectionForeground&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#2979FF&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;list.inactiveSelectionForeground&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#2979FF&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;list.highlightForeground&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#2979FF&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;scrollbarSlider.activeBackground&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#2979FF50&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;editorSuggestWidget.highlightForeground&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#2979FF&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;textLink.foreground&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#2979FF&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;progressBar.background&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#2979FF&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;pickerGroup.foreground&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#2979FF&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;tab.activeBorder&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#2979FF&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;notificationLink.foreground&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#2979FF&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;editorWidget.resizeBorder&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#2979FF&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;editorWidget.border&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#2979FF&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;settings.modifiedItemIndicator&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#2979FF&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;settings.headerForeground&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#2979FF&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;panelTitle.activeBorder&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#2979FF&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;breadcrumb.activeSelectionForeground&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#2979FF&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;menu.selectionForeground&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#2979FF&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;menubar.selectionForeground&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#2979FF&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;workbench.colorTheme&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Sublime Material Theme - Dark&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;prettier.singleQuote&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;prettier.jsxSingleQuote&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;vetur.format.defaultFormatterOptions&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;prettier&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;singleQuote&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;vue-i18n-ally.displayLanguage&quot;</span><span class="token operator">:</span> <span class="token string">&quot;en-US&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;extensions.ignoreRecommendations&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;workbench.sideBar.location&quot;</span><span class="token operator">:</span> <span class="token string">&quot;left&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;editor.codeActionsOnSave&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;source.fixAll.eslint&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;eslint.migration.2_x&quot;</span><span class="token operator">:</span> <span class="token string">&quot;off&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;terminal.integrated.shell.linux&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/usr/bin/zsh&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;[json]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;esbenp.prettier-vscode&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;editor.acceptSuggestionOnEnter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;off&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;[vue]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;esbenp.prettier-vscode&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;tabnine.experimentalAutoImports&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;vsicons.dontShowNewVersionMessage&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;editor.suggestSelection&quot;</span><span class="token operator">:</span> <span class="token string">&quot;first&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;vsintellicode.modify.editor.suggestSelection&quot;</span><span class="token operator">:</span> <span class="token string">&quot;automaticallyOverrodeDefaultValue&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;editor.minimap.enabled&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;editor.renderControlCharacters&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;workbench.activityBar.visible&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;editor.fontFamily&quot;</span><span class="token operator">:</span> <span class="token string">&quot;'Fira Code Retina', Consolas, 'Courier New', monospace&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;editor.fontLigatures&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;editor.fontWeight&quot;</span><span class="token operator">:</span> <span class="token string">&quot;normal&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;editor.fontSize&quot;</span><span class="token operator">:</span> <span class="token number">13</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;sync.gist&quot;</span><span class="token operator">:</span> <span class="token string">&quot;9accb97dfa086afc560aae212c4b9db5&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;sync.autoDownload&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;sync.autoUpload&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;sync.forceDownload&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;sync.forceUpload&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;sync.quietSync&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;settingsSync.ignoredExtensions&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;dbaeumer.jshint&quot;</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="_15-set-vscode-workspace-setting"><a href="#_15-set-vscode-workspace-setting" class="header-anchor">#</a> 15. Set VSCode Workspace Setting</h4> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;editor.renderWhitespace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;all&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;files.eol&quot;</span><span class="token operator">:</span> <span class="token string">&quot;\n&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;prettier.trailingComma&quot;</span><span class="token operator">:</span> <span class="token string">&quot;none&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;gitlens.advanced.messages&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;suppressShowKeyBindingsNotice&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;gitlens.historyExplorer.enabled&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;eslint.autoFixOnSave&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;eslint.trace.server&quot;</span><span class="token operator">:</span> <span class="token string">&quot;verbose&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;emmet.includeLanguages&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;javascript&quot;</span><span class="token operator">:</span> <span class="token string">&quot;html&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;vue&quot;</span><span class="token operator">:</span> <span class="token string">&quot;html&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;vue-html&quot;</span><span class="token operator">:</span> <span class="token string">&quot;html&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;javascriptreact&quot;</span><span class="token operator">:</span> <span class="token string">&quot;html&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;typescript&quot;</span><span class="token operator">:</span> <span class="token string">&quot;html&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;vetur.format.defaultFormatter.js&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vscode-typescript&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;editor.multiCursorModifier&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ctrlCmd&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;materialTheme.fixIconsRunning&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;editor.formatOnSave&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;prettier.singleQuote&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;editor.tabSize&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;files.associations&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;*.js&quot;</span><span class="token operator">:</span> <span class="token string">&quot;javascript&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="_16-set-vscode-keyboard-setting"><a href="#_16-set-vscode-keyboard-setting" class="header-anchor">#</a> 16. Set VSCode Keyboard Setting</h4> <div class="language-json extra-class"><pre class="language-json"><code> <span class="token punctuation">{</span>
+    <span class="token property">&quot;key&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ctrl+shift+u&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;command&quot;</span><span class="token operator">:</span> <span class="token string">&quot;editor.action.transformToUppercase&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;when&quot;</span><span class="token operator">:</span> <span class="token string">&quot;editorTextFocus&quot;</span>
+ <span class="token punctuation">}</span><span class="token punctuation">,</span>
+ <span class="token punctuation">{</span>
+    <span class="token property">&quot;key&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ctrl+shift+l&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;command&quot;</span><span class="token operator">:</span> <span class="token string">&quot;editor.action.transformToLowercase&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;when&quot;</span><span class="token operator">:</span> <span class="token string">&quot;editorTextFocus&quot;</span>
+ <span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.b3709f9f.js" defer></script><script src="/assets/js/2.315cac69.js" defer></script><script src="/assets/js/11.0d2879b0.js" defer></script>
+  </body>
+</html>

@@ -1,15 +1,16 @@
 module.exports = {
   base: '/',
   title: 'NatCOOP',
-  description: '',
+  description: 'Welcome to your Home',
   dest: 'docs',
   themeConfig: {
     nav: [
-      { text: 'Trang Chủ', link: '/' },
-      { text: 'Giới Thiệu', link: '/about/' },
-      { text: 'Bài Viết', link: '/posts/' },
+      { text: 'Nhà', link: '/' },
+      { text: 'Tôi', link: '/me/' },
+      { text: 'Ở đây', link: '/this/' },
+      { text: 'Ngoài kia', link: '/that/' },
     ],
     displayAllHeaders: true,
-    sidebar: 'auto'
+
   }
 }
